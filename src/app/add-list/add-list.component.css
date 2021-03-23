@@ -1,0 +1,15 @@
+.red{
+    color: red;
+}
+.btn-sm{
+    width: 70px;
+}
+.btn-outline-primary {
+    color: #ff6600;
+    border-color: #ff6600;
+}
+
+.btn-primary{
+    background-color: #ff6600;
+    border-color: #ff6600;
+}
