@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { LanguageData } from '../language-data';
+import { LanguageData } from '../../language-data';
 import { LanguageService } from '../services/language.service';
 
 @Component({
