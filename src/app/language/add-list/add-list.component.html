@@ -4,7 +4,7 @@
             <div class="row align-items-center border p-2 m-1">
               <div class="col-3 my-1">
                 <label for="">Language <span class="red">*</span></label>
-                <select class="custom-select mr-sm-2" [(ngModel)]="languageData.language" name="language">
+                <select class="custom-select mr-sm-2" [(ngModel)]="languageData.languageName" name="languageName">
                   <option selected>Select</option>
                   <option value="English" >English</option>
                   <option value="Hindi">Hindi</option>
@@ -13,7 +13,7 @@
               </div>
               <div class="col-3 my-1">
                 <label for="">Start Date <span class="red">*</span></label>
-                <input class="form-control" type="date" [(ngModel)]="languageData.date" name="date">
+                <input class="form-control" type="date" [(ngModel)]="languageData.startDate" name="startDate">
               </div> 
             </div>
             <div class="row justify-content-end">
@@ -31,11 +31,12 @@
             <th scope="col">Start Date</th>
             <th scope="col">End Date</th>
             <th scope="col">Action</th>
+            <th scope="col">Edit</th>
           </tr>
         </thead>
-         <!-- <tbody *ngFor="let languageData of languages | async"> -->
-             <tbody>
-              <tr>
+         <tbody *ngFor="let languageData of languages | async">
+             <!-- <tbody> -->
+              <!-- <tr>
                 <th scope="row">English</th>
                 <td>data</td>
                 <td>data</td>
@@ -46,13 +47,13 @@
                 <td>data</td>
                 <td>data</td>
                 <td>data</td>
-              </tr>
-              <!-- <tr>
-                <th scope="row">{{languageData.language}}</th>
-                <td>{{languageData.startDate}}</td>
-                <td>{{languageData.endDate}}</td>
-                <td>{{languageData.action}}</td>
               </tr> -->
+              <tr>
+                <th scope="row">{{languageData.languageName}}</th>
+                <td>{{languageData.startDate}}</td>
+                <td>{{languageData.statusCode}}</td>
+                <td>{{languageData.statusCode}}</td>
+              </tr>
         </tbody>
       </table>
 </div>

@@ -13,8 +13,8 @@ export class AddListComponent implements OnInit {
 
   languages:Observable<LanguageData[]>;
 
-  language="";
-  date="";
+  languageName="";
+  startDate="";
   parentPosts:any[]=[];
 
   languageData: LanguageData=new LanguageData();
@@ -22,6 +22,7 @@ export class AddListComponent implements OnInit {
   constructor(public languageService:LanguageService, private router:Router ) { }
 
   ngOnInit(): void {
+    this.reLoadData();
   }
 
   save() {

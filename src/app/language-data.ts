@@ -1,4 +1,4 @@
 export class LanguageData{
-    date: String;
-    language: String;
+    startDate   : String;
+    languageName: String;
 }

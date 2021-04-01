@@ -7,7 +7,8 @@ import { HttpClient } from '@angular/common/http'
 })
 export class LanguageService {
   languageData;
-  private baseUrl2 = 'http://localhost:8080/Language/language';
+  private baseUrl2 = 'https://fxlangpoc.azurewebsites.net/api/AddLanguage/';
+  private baseUrl1 = 'https://fxlangpoc.azurewebsites.net/api/GetLanguageList/';
   constructor(private http: HttpClient) { }
 
   saveLanguage(langData: Object):Observable<Object>{
@@ -16,6 +17,6 @@ export class LanguageService {
   }
 
   getLanguageData(): Observable<any>{
-		return this.http.get(`${this.baseUrl2}`);
+		return this.http.get(`${this.baseUrl1}`);
     }
 }
